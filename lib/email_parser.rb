@@ -5,9 +5,11 @@
 
 class EmailAddressParser
   attr_accessor :email_data
+  
   def initialize(email_data)
     @email_data = email_data
   end
+  
   def parse
     email_data = email_data.split(",").collect do |emails|
       emails.split(",")
